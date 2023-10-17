@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins:wght@100;400;500;600;700&family=Roboto+Mono:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: black;
+}
+nav ul{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    font-family: Roboto;
+}
+.logo img{
+    width: 35px;
+    padding: 0 5px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+/* Container */
+.container{
+    margin: 30px auto;
+    min-height: 70vh;
+    width: 70%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url(bg.png);
+    background-size: cover;
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.songlist{
+    color: black;
+    width: 45%;
+    margin-top: 25px;
+}
+
+.songItem img{
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.songItem{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.timestamp{
+    margin-left: 2px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+/* bottom */
+.bottom{
+    position: sticky;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    height: 10vh;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#progressBar{
+    width: 75vw;
+
+}
+.icons{
+    color: white;
+    margin-top: 5px;
+}
+.icons i{
+    cursor: pointer;
+    margin-left: 5px;
+}
+.songinfo{
+    color: white;
+    font-size: 13px;
+    font-weight:200;
+    position: absolute;
+    left: 12vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    margin-left: 2px;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      background-color: lightgreen;
+    }
+    .songlist{
+        width: 70vw;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    body {
+        background-color: antiquewhite;
+    }
+    .songlist{
+        width: 45%;
+    }
+  }
